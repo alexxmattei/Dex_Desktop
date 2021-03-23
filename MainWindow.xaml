@@ -5,13 +5,13 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:DexDesktop"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800"
+        Title="MainWindow" Height="680" Width="1200"
         WindowStyle="None"
         ResizeMode="CanResizeWithGrip"
         Background="#181735">
     <Grid>
         <Grid.RowDefinitions>
-            <RowDefinition Height="25"/>
+            <RowDefinition Height="32"/>
             <RowDefinition/>
         </Grid.RowDefinitions>
 
@@ -20,7 +20,7 @@
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
 
-        
+
         <Grid Background="#0F0F2D" 
               Grid.ColumnSpan="2">
 
@@ -47,6 +47,7 @@
                        VerticalAlignment="Center"
                        HorizontalAlignment="Center"
                        FontFamily="Fonts/#Dosis"
+                       FontSize="18"
                        FontWeight="Medium"
                        />
 
@@ -56,6 +57,7 @@
                        VerticalAlignment="Center"
                        HorizontalAlignment="Center"
                        FontFamily="Fonts/#Dosis"
+                       FontSize="16"
                        FontWeight="Medium"
                        />
 
@@ -65,6 +67,7 @@
                        VerticalAlignment="Center"
                        HorizontalAlignment="Center"
                        FontFamily="Fonts/#Dosis"
+                       FontSize="16"
                        FontWeight="Medium"
                        />
 
@@ -74,15 +77,17 @@
                        VerticalAlignment="Center"
                        HorizontalAlignment="Center"
                        FontFamily="Fonts/#Dosis"
+                       FontSize="16"
                        FontWeight="Medium"
                        />
-            
+
             <TextBlock Text="Competitie"
                        Foreground="LightGray"
                        Grid.Column="10"
                        VerticalAlignment="Center"
                        HorizontalAlignment="Center"
                        FontFamily="Fonts/#Dosis"
+                       FontSize="16"
                        FontWeight="Medium"
                        />
 
@@ -92,6 +97,7 @@
                        VerticalAlignment="Center"
                        HorizontalAlignment="Center"
                        FontFamily="Fonts/#Dosis"
+                       FontSize="16"
                        FontWeight="Medium"
                        />
 
@@ -99,19 +105,32 @@
         </Grid>
 
         <StackPanel Grid.Row="1">
-            
+
             <StackPanel>
-                
+
             </StackPanel>
-            
-            <Border BorderBrush="#425b96" CornerRadius="10,10,10,10" BorderThickness="2,2,2,2">
-                <StackPanel Orientation="Horizontal" Background="#425b96" Margin="15px" HorizontalAlignment="Stretch">
-                    <Image Width="50" Height="50"
+
+            <Border BorderBrush="#425b96" 
+                    CornerRadius="10,10,10,10" 
+                    BorderThickness="5,5,5,5"
+                    Margin="10, 35, 10, 10">
+
+                <StackPanel Orientation="Horizontal" 
+                            Background="#425b96" 
+                            Margin="10, 10, 10, 10" 
+                            HorizontalAlignment="Stretch"
+                            Panel.ZIndex="1">
+
+                    <Image Width="60" 
+                           Height="60"
+                           Margin= "10, 10, 10, 10"
                            Source="Images/dex-online-logo.png"/>
+
                     <TextBlock Text="Dex Online"
                                Foreground="White"
-                               FontSize="20"
+                               FontSize="32"
                                FontWeight="Medium"
+                               Margin="10, 10, 10, 10"
                                VerticalAlignment="Center"
                                FontFamily="Fonts/#Dosis"/>
                 </StackPanel>
@@ -119,56 +138,112 @@
 
             <TextBlock Text =""
                            Foreground="WhiteSmoke"
-                           FontSize="14"
+                           FontSize="16"
                            FontWeight="Medium"
-                           FontFamily="Fonts/#Dosis"/>
+                           FontFamily="Fonts/#Dosis"
+                           Panel.ZIndex="1"/>
 
-            <TextBlock Text ="      Despre"
+            <TextBlock Text ="Despre"
                            Foreground="WhiteSmoke"
-                           FontSize="14"
+                           FontSize="26"
+                           Padding="22, 5, 5, 5"
                            FontWeight="Medium"
-                           FontFamily="Fonts/#Dosis"/>
+                           FontFamily="Fonts/#Dosis"
+                           Panel.ZIndex="1"/>
 
             <TextBlock Text="DexOnline este o platforma care permite utilizatorilor sa caute cuvintele necunoscute cu rapiditate si sa se infomeze in raport cu sensul lor."
                        Foreground="WhiteSmoke"
-                       FontSize= "10"
-                       FontWeight="Light"
+                       FontSize= "14"
+                       FontWeight="Medium"
                        FontFamily="Fonts/#Dosis"
                        TextWrapping="Wrap"
-                       Padding="16px">
+                       Padding="22px">
             </TextBlock>
 
             <TextBlock Text="Prin DexOnline, utilizatorii pot adauga cuvinte impreuna cu definitiile aferente pentru a ajuta si alte persoane in drumul catre cunoastere. In cazul in care utlizatorii doresc sa afle cat de bine stapanesc limba romana, acestia pot opta pentru varianta de Competitie a platformei, unde pot concura intr-un joc de divertisment care presupune ghicirea sensului a cinci cuvinte aleator alese."
                        
                        Foreground="WhiteSmoke"
-                       FontSize= "10"
-                       FontWeight="Light"
+                       FontSize= "14"
+                       FontWeight="Medium"
                        FontFamily="Fonts/#Dosis"
                        TextWrapping="Wrap"
-                       Padding="16px">
+                       Padding="22px"
+                       Panel.ZIndex="1">
             </TextBlock>
 
             <TextBlock Text="Pentru a accesa platforma, este necesar sa va faceti un cont de utilizator, prin intermediul caruia veti putea urmari evolutia dumneavoastra in ceea ce priveste cunoasterea limbii romane. Odata cu crearea contului, veti putea urmari de asemenea scorul acumulat in cadrul variantei de Competitie a DexOnline, prin care veti observa cum va clasati data de alti utiliztori ai platformei."
                        
                        Foreground="WhiteSmoke"
-                       FontSize= "10"
-                       FontWeight="Light"
+                       FontSize= "14"
+                       FontWeight="Medium"
                        FontFamily="Fonts/#Dosis"
                        TextWrapping="Wrap"
-                       Padding="16px">
+                       Padding="22px">
             </TextBlock>
 
             <TextBlock Text="Va multimum ca ati ales DexOnline, speram ca veti avea o experienta cat mai placuta cu platforma noastra. 
-                                                                                                                                                                Mult Succes!"
+                                                                                                                                                                             Mult Succes!"
                        
                        Foreground="WhiteSmoke"
-                       FontSize= "10"
-                       FontWeight="Light"
+                       FontSize= "14"
+                       FontWeight="Medium"
                        FontFamily="Fonts/#Dosis"
                        TextWrapping="Wrap"
-                       Padding="16px">
+                       Padding="22px">
             </TextBlock>
-           
+
         </StackPanel>
+
+        <Grid Grid.Column="1"
+              Margin="409.2,256.2,-427.4,19.6"
+              Panel.ZIndex="1" Grid.Row="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="121*"/>
+                <RowDefinition Height="272*"/>
+            </Grid.RowDefinitions>
+
+            <Grid.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-51.61"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Grid.RenderTransform>
+
+            <StackPanel Orientation="Horizontal"
+                        Margin="-356,119,-996,-54.2" RenderTransformOrigin="0.5,0.5" Grid.RowSpan="2">
+                <StackPanel.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform AngleX="-3.433"/>
+                        <RotateTransform/>
+                        <TranslateTransform X="-7.071"/>
+                    </TransformGroup>
+                </StackPanel.RenderTransform>
+                <StackPanel Margin="0,0,0,-27">
+                    <Border Width="700"
+                            Height="40"
+                            Background="#3DDDC2"
+                            Margin="50, 0, 70, 0"
+                            CornerRadius="20"/>
+
+                    <Border Width="700"
+                            Height="45"
+                            Background="#FC6586"
+                            Margin="200, 20, 0, 0"
+                            CornerRadius="20"/>
+
+                    <Border Width="700"
+                            Height="40"
+                            Background="#383660"
+                            Margin="75, 20, 0, 0"
+                            CornerRadius="20"/>
+                </StackPanel>
+
+            </StackPanel>
+
+        </Grid>
+
     </Grid>
 </Window>
