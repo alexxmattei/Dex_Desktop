@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:DexDesktop"
         mc:Ignorable="d"
-        Title="MainWindow" Height="680" Width="1200"
+        Title="MainWindow" Height="700" Width="1200"
         WindowStyle="None"
         ResizeMode="CanResizeWithGrip"
         Background="#181735">
@@ -113,7 +113,7 @@
             <Border BorderBrush="#425b96" 
                     CornerRadius="10,10,10,10" 
                     BorderThickness="5,5,5,5"
-                    Margin="10, 35, 10, 10">
+                    Margin="15, 15, 15, 10">
 
                 <StackPanel Orientation="Horizontal" 
                             Background="#425b96" 
@@ -136,14 +136,20 @@
                 </StackPanel>
             </Border>
 
-            <TextBlock Text =""
+            <Border BorderBrush="#425b96" 
+                    CornerRadius="10,10,10,10" 
+                    BorderThickness="5,5,5,5"
+                    Margin="15, 0, 15, 15">
+                <StackPanel>
+
+                    <TextBlock Text =""
                            Foreground="WhiteSmoke"
                            FontSize="16"
                            FontWeight="Medium"
                            FontFamily="Fonts/#Dosis"
                            Panel.ZIndex="1"/>
 
-            <TextBlock Text ="Despre"
+                    <TextBlock Text ="Despre"
                            Foreground="WhiteSmoke"
                            FontSize="26"
                            Padding="22, 5, 5, 5"
@@ -151,16 +157,16 @@
                            FontFamily="Fonts/#Dosis"
                            Panel.ZIndex="1"/>
 
-            <TextBlock Text="DexOnline este o platforma care permite utilizatorilor sa caute cuvintele necunoscute cu rapiditate si sa se infomeze in raport cu sensul lor."
+                    <TextBlock Text="DexOnline este o platforma care permite utilizatorilor sa caute cuvintele necunoscute cu rapiditate si sa se infomeze in raport cu sensul lor."
                        Foreground="WhiteSmoke"
                        FontSize= "14"
                        FontWeight="Medium"
                        FontFamily="Fonts/#Dosis"
                        TextWrapping="Wrap"
                        Padding="22px">
-            </TextBlock>
+                    </TextBlock>
 
-            <TextBlock Text="Prin DexOnline, utilizatorii pot adauga cuvinte impreuna cu definitiile aferente pentru a ajuta si alte persoane in drumul catre cunoastere. In cazul in care utlizatorii doresc sa afle cat de bine stapanesc limba romana, acestia pot opta pentru varianta de Competitie a platformei, unde pot concura intr-un joc de divertisment care presupune ghicirea sensului a cinci cuvinte aleator alese."
+                    <TextBlock Text="Prin DexOnline, utilizatorii pot adauga cuvinte impreuna cu definitiile aferente pentru a ajuta si alte persoane in drumul catre cunoastere. In cazul in care utlizatorii doresc sa afle cat de bine stapanesc limba romana, acestia pot opta pentru varianta de Competitie a platformei, unde pot concura intr-un joc de divertisment care presupune ghicirea sensului a cinci cuvinte aleator alese."
                        
                        Foreground="WhiteSmoke"
                        FontSize= "14"
@@ -169,9 +175,9 @@
                        TextWrapping="Wrap"
                        Padding="22px"
                        Panel.ZIndex="1">
-            </TextBlock>
+                    </TextBlock>
 
-            <TextBlock Text="Pentru a accesa platforma, este necesar sa va faceti un cont de utilizator, prin intermediul caruia veti putea urmari evolutia dumneavoastra in ceea ce priveste cunoasterea limbii romane. Odata cu crearea contului, veti putea urmari de asemenea scorul acumulat in cadrul variantei de Competitie a DexOnline, prin care veti observa cum va clasati data de alti utiliztori ai platformei."
+                    <TextBlock Text="Pentru a accesa platforma, este necesar sa va faceti un cont de utilizator, prin intermediul caruia veti putea urmari evolutia dumneavoastra in ceea ce priveste cunoasterea limbii romane. Odata cu crearea contului, veti putea urmari de asemenea scorul acumulat in cadrul variantei de Competitie a DexOnline, prin care veti observa cum va clasati data de alti utiliztori ai platformei."
                        
                        Foreground="WhiteSmoke"
                        FontSize= "14"
@@ -179,9 +185,9 @@
                        FontFamily="Fonts/#Dosis"
                        TextWrapping="Wrap"
                        Padding="22px">
-            </TextBlock>
+                    </TextBlock>
 
-            <TextBlock Text="Va multimum ca ati ales DexOnline, speram ca veti avea o experienta cat mai placuta cu platforma noastra. 
+                    <TextBlock Text="Va multimum ca ati ales DexOnline, speram ca veti avea o experienta cat mai placuta cu platforma noastra. 
                                                                                                                                                                              Mult Succes!"
                        
                        Foreground="WhiteSmoke"
@@ -190,7 +196,10 @@
                        FontFamily="Fonts/#Dosis"
                        TextWrapping="Wrap"
                        Padding="22px">
-            </TextBlock>
+                    </TextBlock>
+
+                </StackPanel>
+            </Border>
 
         </StackPanel>
 
