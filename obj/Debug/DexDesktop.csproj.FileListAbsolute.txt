@@ -1,0 +1,15 @@
+D:\_FACULTATE\SEM_2\MVP\_LABORATOARE\_LAB_TEMA_01\DexDesktop\bin\Debug\DexDesktop.exe.config
+D:\_FACULTATE\SEM_2\MVP\_LABORATOARE\_LAB_TEMA_01\DexDesktop\bin\Debug\DexDesktop.exe
+D:\_FACULTATE\SEM_2\MVP\_LABORATOARE\_LAB_TEMA_01\DexDesktop\bin\Debug\DexDesktop.pdb
+D:\_FACULTATE\SEM_2\MVP\_LABORATOARE\_LAB_TEMA_01\DexDesktop\obj\Debug\DexDesktop.csprojAssemblyReference.cache
+D:\_FACULTATE\SEM_2\MVP\_LABORATOARE\_LAB_TEMA_01\DexDesktop\obj\Debug\MainWindow.g.cs
+D:\_FACULTATE\SEM_2\MVP\_LABORATOARE\_LAB_TEMA_01\DexDesktop\obj\Debug\App.g.cs
+D:\_FACULTATE\SEM_2\MVP\_LABORATOARE\_LAB_TEMA_01\DexDesktop\obj\Debug\DexDesktop_MarkupCompile.cache
+D:\_FACULTATE\SEM_2\MVP\_LABORATOARE\_LAB_TEMA_01\DexDesktop\obj\Debug\DexDesktop_MarkupCompile.lref
+D:\_FACULTATE\SEM_2\MVP\_LABORATOARE\_LAB_TEMA_01\DexDesktop\obj\Debug\MainWindow.baml
+D:\_FACULTATE\SEM_2\MVP\_LABORATOARE\_LAB_TEMA_01\DexDesktop\obj\Debug\DexDesktop.g.resources
+D:\_FACULTATE\SEM_2\MVP\_LABORATOARE\_LAB_TEMA_01\DexDesktop\obj\Debug\DexDesktop.Properties.Resources.resources
+D:\_FACULTATE\SEM_2\MVP\_LABORATOARE\_LAB_TEMA_01\DexDesktop\obj\Debug\DexDesktop.csproj.GenerateResource.cache
+D:\_FACULTATE\SEM_2\MVP\_LABORATOARE\_LAB_TEMA_01\DexDesktop\obj\Debug\DexDesktop.csproj.CoreCompileInputs.cache
+D:\_FACULTATE\SEM_2\MVP\_LABORATOARE\_LAB_TEMA_01\DexDesktop\obj\Debug\DexDesktop.exe
+D:\_FACULTATE\SEM_2\MVP\_LABORATOARE\_LAB_TEMA_01\DexDesktop\obj\Debug\DexDesktop.pdb
