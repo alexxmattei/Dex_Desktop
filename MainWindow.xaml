@@ -139,7 +139,7 @@
             <Border BorderBrush="#425b96" 
                     CornerRadius="10,10,10,10" 
                     BorderThickness="5,5,5,5"
-                    Margin="15, 0, 15, 15">
+                    Margin="15, 0, 15, 40">
                 <StackPanel>
 
                     <TextBlock Text =""
