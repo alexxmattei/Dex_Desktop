@@ -51,7 +51,7 @@
                        FontWeight="Medium"
                        />
 
-            <TextBlock Text="Login"
+            <!--<TextBlock Text="Login"
                        Foreground="LightGray"
                        Grid.Column="4"
                        VerticalAlignment="Center"
@@ -59,19 +59,24 @@
                        FontFamily="Fonts/#Dosis"
                        FontSize="16"
                        FontWeight="Medium"
-                       />
+                       />-->
 
-            <TextBlock Text="Adaugare"
-                       Foreground="LightGray"
+            <TextBlock Foreground="LightGray"
                        Grid.Column="6"
                        VerticalAlignment="Center"
                        HorizontalAlignment="Center"
                        FontFamily="Fonts/#Dosis"
                        FontSize="16"
                        FontWeight="Medium"
-                       />
+                       >
+                <Hyperlink Click="buttonRegister_Click"
+                       Foreground="LightGray"
+                       FontFamily="Fonts/#Dosis"
+                       FontSize="16"
+                       FontWeight="Medium">Cont Nou</Hyperlink>
+            </TextBlock>
 
-            <TextBlock Text="Admin"
+            <TextBlock 
                        Foreground="LightGray"
                        Grid.Column="8"
                        VerticalAlignment="Center"
@@ -79,7 +84,13 @@
                        FontFamily="Fonts/#Dosis"
                        FontSize="16"
                        FontWeight="Medium"
-                       />
+                       >
+                <Hyperlink Click="buttonAdmin_Click"
+                       Foreground="LightGray"
+                       FontFamily="Fonts/#Dosis"
+                       FontSize="16"
+                       FontWeight="Medium">Admin</Hyperlink>
+            </TextBlock>
 
             <TextBlock Text="Competitie"
                        Foreground="LightGray"
@@ -230,7 +241,7 @@
                         <TranslateTransform X="-7.071"/>
                     </TransformGroup>
                 </StackPanel.RenderTransform>
-                <StackPanel Margin="0,0,0,-27">
+                <StackPanel Margin="0,47,0,-82.2">
                     <Border Width="700"
                             Height="40"
                             Background="#3DDDC2"
@@ -253,6 +264,26 @@
             </StackPanel>
 
         </Grid>
+        <Border BorderBrush="#425b96" 
+            CornerRadius="10,10,10,10" 
+            BorderThickness="5,5,5,5"
+            Margin="20.2,15,19.6,384.6" Grid.Row="1" Grid.Column="1">
+
+            <StackPanel Orientation="Horizontal" 
+                Background="#425b96" 
+                Margin="10, 10, 10, 10" 
+                HorizontalAlignment="Stretch"
+                Panel.ZIndex="1">
+
+                <TextBlock Height="25" HorizontalAlignment="Left" FontFamily="Fonts/#Dosis" Foreground='White' FontSize="16" Margin="50,80,0,0" Name="textBlock1" Text="Email" VerticalAlignment="Top" Width="80" />
+                <TextBlock Height="23" HorizontalAlignment="Left" FontFamily="Fonts/#Dosis" Foreground="White" FontSize="16" Margin="-80,120,0,0" x:Name="textBlock2" Text="Parola" VerticalAlignment="Top" Width="80" />
+                <TextBox Height="23" HorizontalAlignment="Left" Margin="10,80,0,0" BorderBrush="WhiteSmoke" BorderThickness="2.5px" Background="#181735" Foreground="White" Name="textBoxEmail" VerticalAlignment="Top" Width="300" />
+                <PasswordBox Height="23" HorizontalAlignment="Left" Margin="-300,120,0,0" BorderBrush="WhiteSmoke" BorderThickness="2.5px" Background="#181735" Foreground ="White" Name="passwordBox1" VerticalAlignment="Top" Width="300" />
+                <Button Content="Login" Height="23" HorizontalAlignment="Left" Background="#181735" BorderThickness="2.5px" BorderBrush="WhiteSmoke" Foreground="White" Margin="-210,180,0,0" Name="button1" VerticalAlignment="Top" Width="104" Click="button1_Click" />
+                <TextBlock Height="23" HorizontalAlignment="Left" x:Name ="errormessage" VerticalAlignment="Top" Width="300" Margin="-300,35,0,0"  OpacityMask="Crimson" Foreground="White"  />
+            </StackPanel>
+            
+        </Border>
 
     </Grid>
 </Window>

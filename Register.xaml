@@ -3,6 +3,7 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:context="clr-namespace:DexDesktop"
         xmlns:local="clr-namespace:DexDesktop"
         mc:Ignorable="d"
         Title="Register" 
@@ -10,6 +11,10 @@
         WindowStyle="None"
         ResizeMode="CanResizeWithGrip"
         Background="Black">
+
+    <!--<Window.DataContext>
+        <context:App/>
+    </Window.DataContext>-->
 
     <Grid Height="680" 
           Width="1180"
@@ -29,6 +34,9 @@
         <Button Margin="1100, 5, 12, 600"
                 Content="Login"
                 Cursor="Hand"
+                Foreground="White"
+                FontSize="24"
+                FontFamily="Fonts/#Dosis"
                 Click="Login_Click">
             <Button.Template>
                 <ControlTemplate TargetType="Button">
@@ -54,7 +62,7 @@
                     BorderThickness="10,10,10,10"
                     Margin="100, 50, 100, 50">
 
-            <Grid Margin="14.8,82.8,14.8,19.8" 
+            <Grid Margin="41.4,95.4,42.4,29.4" 
               Background="#3DDDC2">
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="99*"/>
@@ -68,11 +76,21 @@
                 <TextBlock Height="20" HorizontalAlignment="Left" Margin="67,0,0,0" x:Name="errormessage" VerticalAlignment="Top" Width="250" OpacityMask="Crimson" Foreground="#FFE5572C" Grid.ColumnSpan="2"/>
                 <TextBlock Height="25" HorizontalAlignment="Left" Margin="67,20,0,0" Name="textBlockFirstname" Text="First Name: " VerticalAlignment="Top" Width="110" Grid.ColumnSpan="2"/>
                 <TextBlock Height="25" HorizontalAlignment="Left" Margin="67,50,0,0" Name="textBlockLastname" Text="Last Name: " VerticalAlignment="Top" Width="110" Grid.ColumnSpan="2"/>
-                <TextBlock Height="25" HorizontalAlignment="Left" Margin="67,80,0,0" Name="textBlockEmailId" Text="First Name: " VerticalAlignment="Top" Width="110" Grid.ColumnSpan="2"/>
-                <TextBlock Height="25" HorizontalAlignment="Left" Margin="67,110,0,0" Name="textBlockPassword" Text="Passwoed: " VerticalAlignment="Top" Width="110" Grid.ColumnSpan="2"/>
+                <TextBlock Height="25" HorizontalAlignment="Left" Margin="67,80,0,0" Name="textBlockEmailId" Text="Email: " VerticalAlignment="Top" Width="110" Grid.ColumnSpan="2"/>
+                <TextBlock Height="25" HorizontalAlignment="Left" Margin="67,110,0,0" Name="textBlockPassword" Text="Password: " VerticalAlignment="Top" Width="110" Grid.ColumnSpan="2"/>
                 <TextBlock Height="25" HorizontalAlignment="Left" Margin="67,140,0,0" Name="textBlockConfirmPwd" Text="Confirm Password: " VerticalAlignment="Top" Width="110" Grid.ColumnSpan="2"/>
-                <TextBlock Height="25" HorizontalAlignment="Left" Margin="67,170,0,0" Name="textBlockAddress" Text="Address: " VerticalAlignment="Top" Width="110" Grid.ColumnSpan="2"/>
+                <TextBlock Height="25" HorizontalAlignment="Left" Margin="67,170,0,0" Name="textBlockAddress" Text="Address: " VerticalAlignment="Top" Width="110"/>
 
+                <TextBox Height="25" HorizontalAlignment="Left" Margin="104,15,0,0" Name="textBoxFirstname" Text="{Binding Path=Firstname, Mode=TwoWay}" VerticalAlignment="Top" Width="388" Grid.ColumnSpan="2" Grid.Column="1"/>
+                <TextBox Height="25" HorizontalAlignment="Left" Margin="104,45,0,0" Name="textBoxLastname"  Text="{Binding Path=Lastname, Mode=TwoWay}" VerticalAlignment="Top" Width="388" Grid.ColumnSpan="2" Grid.Column="1"/>
+                <TextBox Height="25" HorizontalAlignment="Left" Margin="104,75,0,0" Name="textBoxEmail" Text="{Binding Path=Email, Mode=TwoWay}"  VerticalAlignment="Top" Width="388" Grid.ColumnSpan="2" Grid.Column="1"/>
+                <PasswordBox Height="25" HorizontalAlignment="Left" Margin="104,105,0,0" Name="passwordBox1"  VerticalAlignment="Top" Width="388" Grid.ColumnSpan="2" Grid.Column="1"/>
+
+                <PasswordBox Height="25" HorizontalAlignment="Left" Margin="103.6,135,0,0" Name="passwordBoxConfirm" VerticalAlignment="Top" Width="388" Grid.ColumnSpan="2" Grid.Column="1" />
+                <TextBox Height="25" HorizontalAlignment="Left" Margin="103.6,165,0,246" Name="textBoxAddress" Text="{Binding Path=Address, Mode=TwoWay}"  VerticalAlignment="Bottom" Width="388" Grid.ColumnSpan="2" Grid.Column="1" />
+                <Button Content="Submit" Height="25" HorizontalAlignment="Left" Margin="313.6,279,0,0" Name="Submit" VerticalAlignment="Top" Width="70" Click="Submit_Click" Grid.Column="2" />
+                <Button Content="Reset" Height="25" HorizontalAlignment="Left" Margin="238.2,279,0,0" Name="button2" VerticalAlignment="Top" Width="70" Click="button2_Click" Grid.Column="2" />
+                <Button Content="Cancel" Height="25" HorizontalAlignment="Right" Margin="0,279,67.2,0" Name="button3" VerticalAlignment="Top" Width="70" Click="button3_Click" Grid.Column="2"/>
             </Grid>
         </Border>
     </Grid>
